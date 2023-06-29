@@ -1,0 +1,138 @@
+/* /* [data-id *='f'] {
+    color:red;
+} */
+
+/* .text {
+    color: green
+} */
+
+/* div ~ p {
+    color:pink
+}
+
+p::first-line {
+    content: '';
+    color: red;
+} */
+
+/* tr:nth-child(odd) {
+    background-color: antiquewhite;
+}
+
+tr:nth-child(even) {
+    background-color: blue;
+} */
+
+
+/* .css-precedence {
+    color: green;
+}
+
+[data-id="text-value"] {
+    color: blue;
+}
+
+#text-id {
+    color: pink
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  
+/*}*/
+
+/*.parent div {
+   
+}
+ */
+
+
+:root {
+    font-size: 20px;
+}
+
+ .text-container {
+    font-size: 1em;
+ }
+
+ .text {
+    font-size: 2rem;
+ }
+
+ .content-box,
+ .border-box {
+    width: 1000px;
+    height: 120px;
+    padding: 20px;
+    margin: 10px;
+    border: 10px solid red;
+    background-color: yellow;
+ }
+
+ .content-box {
+    box-sizing: content-box;
+ } /* 
+ Total width: 
+ Todal-height: 
+
+*/
+
+ .border-box {
+    box-sizing: border-box;
+    background: #f2f2f2 url('/assets/images/customer.jpg') no-repeat right;
+ } /* 
+     Total width: 
+     Todal-height: 
+ 
+ */
+
+ .parent {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 15px;
+    background-color: #f2f2f2;
+    width: 100%;
+    position: relative;
+ }
+
+ .child {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 15px;
+    background-color: #f2f2f2;
+    width: 70%;
+    position: fixed;
+
+    top:50px;
+    left: 40px
+ }
+
+ .container {
+    border: 1px solid red;
+    width:40px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+ }
+
+ .item {
+    border: 1px solid green;
+    /* padding: 5px;
+    margin: 10px; */
+ }
+
+ .item-1 {
+    order: 1;
+ }
